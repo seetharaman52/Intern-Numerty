@@ -1,0 +1,30 @@
+ls Downloads/
+git --version
+cd Documents/
+mkdir Github
+ssh-keygen.exe -t rsa
+ls ../.ssh/
+cat ../.ssh/id_rsa.pub
+cd Github/
+git clone git@github.com:seetharaman52/Intern-Numerty.git
+cd Intern-Numerty/
+rm -r Day*
+rm -r Leave\ Form/
+rm Daily\ Report.xlsx
+git status
+git add -u
+git config --global user.email seetharamanshan699@gmail.com
+git config --global user.name seetharaman52
+git commit -m "Deleted Old files"
+git push
+git status
+ls -v
+git add *
+git commit -m "Added new files"
+git push
+git status
+git add Weekly\ Report.xlsx
+git commit -m "Added Weekly report"
+git push
+git pull
+history

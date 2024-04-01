@@ -1,0 +1,71 @@
+git init <workspace name>
+
+git status
+
+git log -x (1 to x)
+
+git log --since='M D Y'
+
+git add <filename>
+
+git add .
+
+git commit -m "<Message>"
+
+git push
+
+git pull
+
+git diff <filename>
+
+git restore <filename>
+
+git show <commitname> # HEAD~0 to HEAD~x
+
+git annotate <filename>
+
+git reset HEAD (Unstages all changes in the staging area.)
+
+git checkout -- <filename> (Discards changes in the working directory for a specific file and reverts it to the state in the last commit.)
+
+git reset --soft HEAD (Resets the current branch's HEAD to the specified commit, keeping changes in the staging area.)
+
+git reset --hard HEAD (Resets the current branch's HEAD to the specified commit, discarding all changes in the wd & staging area.)
+
+git clean -n, -i, -f
+
+git config --list
+
+git config --global alias.<aliasname> 'command'
+
+git config --global --edit
+
+git branch
+
+git checkout -b <BranchName> (To create new Branch)
+
+git switch <BranchName> (or) git checkout FirstBranch
+
+git branch -d <BranchName> (Delete a branch locally)
+
+git push <remotename=origin(default)> --delete <BranchName> (Delete a branch globally)
+
+git remote -v (Find remote name)
+
+git diff <branch1> <branch2>
+
+git merge <source> <destination>
+
+git remote add <remotename=ourwish> <url>
+
+git push remote local_branch (Push into remote from local_branch)
+ex. git push origin main
+
+
+For SSH in github:
+
+ssh-keygen -t ed25519 -C "seetharamanshan699@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub (Add in github)
+ssh -T git@github.com

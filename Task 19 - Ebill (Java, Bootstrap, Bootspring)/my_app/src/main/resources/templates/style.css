@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" sans-serif;
+}
+
+.custom-border-container-parent{
+    border-radius: 10px;
+}
+
+.btn{
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.custom-alert{
+    width: 50%;
+    margin: 0 auto;
+}

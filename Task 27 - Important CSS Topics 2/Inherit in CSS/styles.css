@@ -1,0 +1,12 @@
+span{
+  color: red;
+  border: 1px solid black;
+}
+
+.extra{
+  color: blue;
+}
+
+.extra span{
+  color: inherit;
+}

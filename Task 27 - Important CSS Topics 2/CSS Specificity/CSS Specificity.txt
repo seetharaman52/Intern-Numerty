@@ -1,0 +1,18 @@
+inline style > id > class > element
+
+element = 1
+class = 10
+id = 100
+inline = 1000
+
+. -> class
+# -> id
+
+Example:
+p -> 1
+p.test -> 11 <!-- Because (1+10(class)) -->
+p#demo -> 101
+.test  -> 10
+#navbar p #demo -> 201
+
+Equal specificity: the latest rule wins

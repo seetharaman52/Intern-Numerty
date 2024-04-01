@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-sm{
+    background: transparent;
+    height: auto;
+    border-radius: 6px;
+    backdrop-filter: blur(20px);
+}
+
+.btn{
+    transition: 1s;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.form-label svg {
+    vertical-align: middle;
+    margin-bottom: 4px;
+    margin-right: 10px;
+}
+
+.zoom-in {
+    transition: transform 0.4s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.zoom-in:hover {
+    transform: scale(1.2);
+}

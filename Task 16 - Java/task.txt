@@ -1,0 +1,20 @@
+FileInputStream , FileOutputStream , BufferedInputstream and BufferedOutputStream
+
+FileInputStream and BufferedInputStream:
+It is used to read data from a file in the form of sequence of bytes and return the data in the form of byte array.
+
+FileOutputStream and BufferedOutputStream:
+It is used to write data into a file in the form of sequence of bytes.
+
+Difference between FileInputStream and BufferedInputStream:
+The main difference between FileInputStream and BufferedInputStream in Java is that FileInputStream reads raw bytes, while BufferedInputStream reads raw characters.
+
+Difference between FileOutputStream and BufferedOutputStream:
+FileOutputStream: This class represents an output stream for writing data to a file. It creates a file and writes bytes to it. 
+However, writing data one byte at a time can be inefficient, especially when dealing with large amounts of data. Each write 
+operation involves a system call, which is a relatively expensive operation.
+
+BufferedOutputStream: This class adds a buffering layer on top of an existing output stream, such as FileOutputStream. Instead 
+of directly writing data to the file, it stores the data in an internal buffer. When the buffer is full, it writes the data to 
+the underlying stream (FileOutputStream in this case) in a single batch. This reduces the number of system calls, resulting in 
+better performance.

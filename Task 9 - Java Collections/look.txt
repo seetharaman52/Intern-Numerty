@@ -1,0 +1,15 @@
+Array List:
+
+Dynamic, Faster Iterations and Random Access
+Not synchronized by default (not thread - safe)
+More memory efficient to vector
+
+Vector:
+Synchronized by default (thread - safe)
+Slightly slower than Array List
+Faster Iterations and Random Access
+
+Linked List:
+Faster insertion and deletion at any position
+Slower random Access than Array List and vector
+Not Synchronized by default, Uses more memory (due to more pointers)

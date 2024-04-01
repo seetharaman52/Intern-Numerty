@@ -1,0 +1,27 @@
+@media screen and (max-width: 900px){
+  body{
+    background-color: tomato;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 800px){
+  body{
+    background-color: yellow;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 700px){
+  body{
+    background-color: aquamarine;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 600px){
+  body{
+    background-color: aqua;
+    height: 100vh;
+  }
+}

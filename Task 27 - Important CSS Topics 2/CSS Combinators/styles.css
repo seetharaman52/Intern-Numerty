@@ -1,0 +1,12 @@
+.first-div > p{
+  background-color: lightblue;
+}
+
+.first-div + p{
+  background-color: aqua;
+}
+
+/* .first-div ~ p{
+  background-color: tomato;
+} */
+

@@ -1,0 +1,44 @@
+$tl:10px;
+$tr:10px;
+$bl:10px;
+$br:10px;
+$wd:100%;
+@mixin tbr($option){
+    @if $option == 1{
+        border-top-left-radius: $tl;
+    }
+    @else if $option == 2{
+        border-top-right-radius: $tr;
+    }
+    @else if $option == 3{
+        border-bottom-left-radius: $bl;
+    }
+    @else if $option == 4{
+        border-bottom-right-radius: $br;
+    }
+}
+#d1{
+    table{
+        border-spacing: 0;
+        width: $wd;
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th:nth-child(1){
+            @include tbr(1);
+        }
+        th:nth-child(3){
+            @include tbr(2);
+        }
+        tr:nth-child(4){
+            td:nth-child(1){
+                @include tbr(3);
+            }
+            td:nth-child(3){
+                @include tbr(4);
+            }
+        }
+    }
+}

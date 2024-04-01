@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EBill</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="icon.png" type="image/png" sizes="16x16" />
+    </head>
+    <body>
+        <div class="container-lg my-3 bg-dark bg-gradient custom-border-container-parent">
+            <div class="alert alert-danger text-center custom-alert" role="alert">
+                Your information is secure and private!
+            </div>
+            <div th:if="${param.customerName}">
+                <h3 class="text-white mt-4">Submitted Data:</h3>
+                <p class="text-white">Customer Name: <span th:text="${param.customerName}"></span></p>
+                <p class="text-white">Customer ID: <span th:text="${param.customerId}"></span></p>
+                <p class="text-white">Consumption (kWh): <span th:text="${param.consumption}"></span></p>
+                <p class="text-white">Tariff rates ($/kWh): <span th:text="${param.tariff}"></span></p>
+                <p class="text-white">Fixed charges ($): <span th:text="${param.fixedCharges}"></span></p>
+                <p class="text-white">Address: <span th:text="${param.address}"></span></p>
+                <p class="text-white">Email: <span th:text="${param.email}"></span></p>
+                <p class="text-white">Date: <span th:text="${param.date}"></span></p>
+                <p class="text-white">Mobile no: <span th:text="${param.mobileNo}"></span></p>
+                <p class="text-white">You need to Pay($): <span th:text="${pricePay}"></span></p>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

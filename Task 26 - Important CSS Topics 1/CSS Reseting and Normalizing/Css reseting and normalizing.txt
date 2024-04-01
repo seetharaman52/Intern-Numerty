@@ -1,0 +1,26 @@
+Each and every browser has some default styles, for example submit button will not appear the same as it is in one browser, it varies.
+
+To overcome this, we will use the reset,
+
+For Example, in order to set all elements to have 
+the same font-weight and style, we use:
+font-weight: inherit;
+font-style:  inherit;
+font-family: inherit;
+
+First create reset.html,
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Import the CSS Reset -->
+    <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+</head>
+<body>
+</body>
+</html>
+
+Normalizing CSS improves cross-browser consistency in HTML element default styling of the browser’s user agent. It’s an HTML5-friendly replacement for the standard CSS Reset.
+
+Normalizing maintains useful defaults over non-stylizing everything and it won’t clutter your dev tools window. Moreover, Resetting is meant to strip all default browser styling on elements. For e.g. margins, paddings, font sizes of all elements are reset to be the same. You will have to redeclare styling for common typographic elements, on the other hand, Normalizing preserves useful default styles rather than stripping all styles everything. Normalizing CSS is a newer technology than the old Resetting CSS, so it is modular and easy to use.
+
+<link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">

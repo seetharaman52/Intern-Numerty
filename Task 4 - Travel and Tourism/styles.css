@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url(./assets/6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+}
+
+.glass{
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 0 0.3vw rgba(255, 255, 255, 1);
+    background-image: url(./assets/6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    padding: 2vw 8%;
+}
+
+.logo{
+    color: #fff;
+    font-size: 2vw;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    color: #fff;
+    list-style: none;
+    display: inline-block;
+    margin: 0 1vw;
+}
+
+nav ul li:hover{
+    border-bottom: 0.2vw solid #fff;
+    transform: scale(1.8);
+    transition: 0.5s;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1vw;
+    color: #fff;
+    font-weight: bold;
+}
+
+.textContainer{
+    width: 100%;
+}
+
+h3{
+    width: 100%;
+    text-align: center;
+    padding-right: 40vw;
+    margin-top: 8vw;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 1.5vw;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10vw;
+    letter-spacing: 1vw;
+    opacity: 0.6;
+    text-align: center;
+}
